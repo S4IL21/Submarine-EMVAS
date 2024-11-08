@@ -1,1 +1,282 @@
-comming soon
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Submarine E.M.V.A.S - Submarine Services</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #003366;
+            text-align: center;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background: #003366;
+            color: white;
+            padding: 20px 0;
+        }
+
+        header .logo {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        #hero {
+            background-image: url('submarine.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        #hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        #hero p {
+            font-size: 1.2em;
+        }
+
+        #hero .btn {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        /* About Section */
+        #about {
+            background: #f4f4f4;
+            padding: 60px 20px;
+        }
+
+        /* Services Section */
+        #services {
+            background: #fff;
+            padding: 60px 20px;
+        }
+
+        .service-cards {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            color: #003366;
+        }
+
+        .card p {
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .pricing {
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+        #contact {
+            background: #f4f4f4;
+            padding: 60px 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-bottom: 5px;
+            color: #003366;
+        }
+
+        form input, form textarea {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form .btn {
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form .btn:hover {
+            background: #0056b3;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Footer */
+        footer {
+            background: #003366;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Submarine E.M.V.A.S</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Explore the Depths of the Ocean</h2>
+            <p>Your gateway to deep-sea exploration and underwater engineering.</p>
+            <a href="#services" class="btn">Our Services</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Submarine E.M.V.A.S is a leader in underwater technology and exploration. We provide advanced submarine solutions for scientific research, marine exploration, and offshore engineering. With years of experience and a commitment to innovation, we take you deeper, further, and safer than ever before.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Submarine Expeditions</h3>
+                    <p>Join us for an unforgettable submarine expedition and explore the underwater world like never before!</p>
+                    <p class="pricing">Price: 20 Euros per hour</p>
+                    <p>Available in: Spain, USA, and China.</p>
+                </div>
+                <div class="card">
+                    <h3>Deep-Sea Research</h3>
+                    <p>Advanced research expeditions for scientific communities and marine institutes.</p>
+                </div>
+                <div class="card">
+                    <h3>Underwater Engineering</h3>
+                    <p>Providing engineering services for underwater infrastructure, cables, and pipelines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+                <p id="formMessage" class="hidden"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Submarine E.M.V.A.S. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            // Display a confirmation message
+            const formMessage = document.getElementById("formMessage");
+            formMessage.innerText = `Thank you, ${name}. Your message has been sent!`;
+            formMessage.classList.remove("hidden");
+
+            // Reset the form
+            this.reset();
+        });
+    </script>
+</body>
+</html>
