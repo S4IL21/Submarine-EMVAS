@@ -1,282 +1,601 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Submarine E.M.V.A.S - Submarine Services</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+  <title> Submarine EMVAS </title>
 
-        h1, h2, h3 {
-            color: #003366;
-            text-align: center;
-        }
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-        p {
-            color: #666;
-            line-height: 1.6;
-        }
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
-        /* Header Styles */
-        header {
-            background: #003366;
-            color: white;
-            padding: 20px 0;
-        }
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-        header .logo {
-            font-size: 2em;
-            text-align: center;
-        }
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
 
-        header nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-        }
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
 
-        header nav ul li {
-            margin: 0 15px;
-        }
-
-        header nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        /* Hero Section */
-        #hero {
-            background-image: url('submarine.jpg');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
-
-        #hero h2 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-
-        #hero p {
-            font-size: 1.2em;
-        }
-
-        #hero .btn {
-            background: #007bff;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            margin-top: 20px;
-            display: inline-block;
-            border-radius: 5px;
-        }
-
-        /* About Section */
-        #about {
-            background: #f4f4f4;
-            padding: 60px 20px;
-        }
-
-        /* Services Section */
-        #services {
-            background: #fff;
-            padding: 60px 20px;
-        }
-
-        .service-cards {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            background: #f4f4f4;
-            padding: 20px;
-            border-radius: 10px;
-            width: 30%;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .card h3 {
-            color: #003366;
-        }
-
-        .card p {
-            font-size: 1.1em;
-            color: #333;
-        }
-
-        .pricing {
-            color: #007bff;
-            font-weight: bold;
-        }
-
-        /* Contact Section */
-        #contact {
-            background: #f4f4f4;
-            padding: 60px 20px;
-        }
-
-        form {
-            max-width: 600px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-        }
-
-        form label {
-            margin-bottom: 5px;
-            color: #003366;
-        }
-
-        form input, form textarea {
-            margin-bottom: 20px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        form .btn {
-            background: #007bff;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        form .btn:hover {
-            background: #0056b3;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        /* Footer */
-        footer {
-            background: #003366;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-    </style>
 </head>
+
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <h1 class="logo">Submarine E.M.V.A.S</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/hero-bg.png" alt="">
+      </div>
+    </div>
+
+    <!-- header section starts -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Submarine EMVAS
+            </span>
+          </a>
+        </nav>
+      </div>
     </header>
-
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h2>Explore the Depths of the Ocean</h2>
-            <p>Your gateway to deep-sea exploration and underwater engineering.</p>
-            <a href="#services" class="btn">Our Services</a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Submarine E.M.V.A.S is a leader in underwater technology and exploration. We provide advanced submarine solutions for scientific research, marine exploration, and offshore engineering. With years of experience and a commitment to innovation, we take you deeper, further, and safer than ever before.</p>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-cards">
-                <div class="card">
-                    <h3>Submarine Expeditions</h3>
-                    <p>Join us for an unforgettable submarine expedition and explore the underwater world like never before!</p>
-                    <p class="pricing">Price: 20 Euros per hour</p>
-                    <p>Available in: Spain, USA, and China.</p>
+    <!-- end header section -->
+    
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Submarine <br>
+                      EMVAS
+                    </h1>
+                    <p>
+                      Dive into the depths of the ocean with our state-of-the-art submarines. Experience the underwater world like never before!
+                    </p>
+                  </div>
                 </div>
-                <div class="card">
-                    <h3>Deep-Sea Research</h3>
-                    <p>Advanced research expeditions for scientific communities and marine institutes.</p>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="images/slider-img.png" alt="">
+                  </div>
                 </div>
-                <div class="card">
-                    <h3>Underwater Engineering</h3>
-                    <p>Providing engineering services for underwater infrastructure, cables, and pipelines.</p>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
+    <!-- end slider section -->
+  </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form id="contactForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit" class="btn">Send Message</button>
-                <p id="formMessage" class="hidden"></p>
-            </form>
+  <!-- service section -->
+  <section class="service_section layout_padding">
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container heading_center">
+          <h2>
+            Our <span>Services</span>
+          </h2>
+          <p>
+            Discover the unique services we offer to explore the ocean's depths.
+          </p>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Submarine E.M.V.A.S. All rights reserved.</p>
+        <div class="row">
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/s1.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Submarine Expeditions
+                </h5>
+                <p>
+                  Join us for an unforgettable submarine expedition and explore the underwater world like never before!
+                </p>
+                <p>
+                  Pricing:
+                  <ul>
+                    <li>825 Euros per hour (Ages 2-6)</li>
+                    <li>1000 Euros per hour (Ages 17-64)</li>
+                    <li>725 Euros per hour (Ages 65+)</li>
+                  </ul>
+                </p>
+                <p>
+                  Available in: Spain, USA, and China.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/s2.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Research Expeditions
+                </h5>
+                <p>
+                  Our submarines are available for researchers and scientists to conduct detailed investigations of the ocean's depths.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/s3.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Secure Storage
+                </h5>
+                <p>
+                  We offer secure storage solutions for your valuable equipment and research materials.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
+  <!-- end service section -->
 
-    <script>
-        document.getElementById("contactForm").addEventListener("submit", function(event) {
-            event.preventDefault();
+  <!-- about section -->
+  <section class="about_section layout_padding">
+    <div class="container  ">
+      <div class="heading_container heading_center">
+        <h2>
+          About <span>Us</span>
+        </h2>
+        <p>
+          We are dedicated to providing unique underwater experiences and facilitating scientific research.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/about-img.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h3>
+              We Are Submarine EMVAS
+            </h3>
+            <p>
+              Our mission is to allow clients to explore the ocean's depths in various locations, including Spain, the USA, and China. We also aim to support researchers and scientists in their investigations of the underwater world.
+            </p>
+            <p>
+              With three submarines stationed in each country, we are well-positioned to cater to both tourists and researchers alike.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about section -->
 
-            const name = document.getElementById("name").value;
-            const email = document.getElementById("email").value;
-            const message = document.getElementById("message").value;
+  <!-- why section -->
+  <section class="why_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Why Choose <span>Us</span>
+        </h2>
+      </div>
+      <div class="why_container">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/w1.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Expert Management
+            </h5>
+            <p>
+              Our team consists of experienced professionals dedicated to ensuring a safe and enjoyable experience for all our clients.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/w2.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Secure Investment
+            </h5>
+            <p>
+              We prioritize the safety of your investment, providing secure and reliable services.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/w3.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Instant Booking
+            </h5>
+            <p>
+              Our services are designed for efficiency, allowing for quick and easy bookings.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/w4.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Happy Customers
+            </h5>
+            <p>
+              We pride ourselves on customer satisfaction, ensuring that every client leaves with unforgettable memories.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end why section -->
 
-            // Display a confirmation message
-            const formMessage = document.getElementById("formMessage");
-            formMessage.innerText = `Thank you, ${name}. Your message has been sent!`;
-            formMessage.classList.remove("hidden");
+  <!-- team section -->
+  <section class="team_section layout_padding">
+    <div class="container-fluid">
+      <div class="heading_container heading_center">
+        <h2 class="">
+          Our <span> Team</span>
+        </h2>
+      </div>
 
-            // Reset the form
-            this.reset();
-        });
-    </script>
+      <div class="team_container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/team-1.jpg" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Joseph Brown
+                </h5>
+                <p>
+                  Marketing Head
+                </p>
+              </div>
+              <div class="social_box">
+                <a href="#">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/team-2.jpg" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Nancy White
+                </h5>
+                <p>
+                  Operations Manager
+                </p>
+              </div>
+              <div class="social_box">
+                <a href="#">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/team-3.jpg" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Earl Martinez
+                </h5>
+                <p>
+                  Chief Engineer
+                </p>
+              </div>
+              <div class="social_box">
+                <a href="#">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/team-4.jpg" class="img1" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Josephine Allard
+                </h5>
+                <p>
+                  Safety Officer
+                </p>
+              </div>
+              <div class="social_box">
+                <a href="#">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end team section -->
+
+  <!-- client section -->
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center psudo_white_primary mb_45">
+        <h2>
+          What Our <span>Customers</span> Say
+        </h2>
+      </div>
+      <div class="carousel-wrap ">
+        <div class="owl-carousel client_owl-carousel">
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/client1.jpg" alt="" class="box-img">
+              </div>
+              <div class="detail-box">
+                <div class="client_id">
+                  <div class="client_info">
+                    <h6>
+                      LusDen
+                    </h6>
+                    <p>
+                      Amazing experience!
+                    </p>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  The submarine expedition was unforgettable. The crew was professional, and the views were breathtaking.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/client2.jpg" alt="" class="box-img">
+              </div>
+              <div class="detail-box">
+                <div class="client_id">
+                  <div class="client_info">
+                    <h6>
+                      Zen Court
+                    </h6>
+                    <p>
+                      Highly recommend!
+                    </p>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  I had a fantastic time exploring the ocean. Submarine EMVAS is the best for anyone looking for adventure!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end client section -->
+
+  <!-- info section -->
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_contact">
+            <h4>
+              Contact Us
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +01 1234567890
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  info@submarineemvas.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_detail">
+            <h4>
+              About Us
+            </h4>
+            <p>
+              We provide unique underwater experiences and facilitate scientific research.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mx-auto info_col">
+          <div class="info_link_box">
+            <h4>
+              Quick Links
+            </h4>
+            <div class="info_links">
+              <a class="active" href="index.html">
+                Home
+              </a>
+              <a class="" href="about.html">
+                About
+              </a>
+              <a class="" href="service.html">
+                Services
+              </a>
+              <a class="" href="why.html">
+                Why Us
+              </a>
+              <a class="" href="team.html">
+                Team
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col ">
+          <h4>
+            Subscribe
+          </h4>
+          <form action="#">
+            <input type="text" placeholder="Enter email" />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="/">Submarine EMVAS</a>
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
 </body>
+
 </html>
